@@ -27,7 +27,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     const initAuth = async () => {
       if (token) {
         try {
-          const res = await axios.get("http://localhost:3000/api/auth/me", {
+          const res = await axios.get("https://etharaai-assignment-api.up.railway.app/api/auth/me", {
             headers: { Authorization: `Bearer ${token}` }
           });
           setUser(res.data);
