@@ -12,7 +12,15 @@ import { errorHandler } from "./middleware/error.js";
 const app = express();
 
 app.use(helmet());
-app.use(cors());
+app.use(
+    cors({
+        origin: [
+            "http://localhost:5173",
+            "https://etharaai-assignment.up.railway.app",
+        ],
+        credentials: true,
+    })
+);
 app.use(express.json());
 
 app.use("/api/auth", authRoutes);
