@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "start": "serve -s dist -l $PORT",
+    "start": "serve -s dist -l ${PORT:-5173}",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -37,5 +37,8 @@
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.58.2",
     "vite": "^8.0.10"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
