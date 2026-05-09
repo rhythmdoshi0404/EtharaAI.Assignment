@@ -6,11 +6,9 @@ A collaborative, full-stack task management platform designed to help teams orga
 
 ## 📸 Screenshots
 
-*(Replace with actual screenshots of the application)*
-
 <p align="center">
-  <img src="https://via.placeholder.com/800x450?text=Dashboard+Overview" alt="Dashboard" width="400"/>
-  <img src="https://via.placeholder.com/800x450?text=Project+Kanban+Board" alt="Kanban Board" width="400"/>
+  <img src="./Assets/Dashboard.png" alt="Dashboard" width="400"/>
+  <img src="./Assets/KanbanBoard.png" alt="Kanban Board" width="400"/>
 </p>
 
 ---
