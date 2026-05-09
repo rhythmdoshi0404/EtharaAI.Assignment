@@ -124,9 +124,9 @@ export function Dashboard() {
 
           {projects.map((project) => {
             const projectTasks = project.tasks || [];
-            const todoTasks = projectTasks.filter(t => t.status === "todo");
-            const inProgressTasks = projectTasks.filter(t => t.status === "in_progress");
-            const doneTasks = projectTasks.filter(t => t.status === "done");
+            const todoTasks = projectTasks.filter((t: any) => t.status === "todo");
+            const inProgressTasks = projectTasks.filter((t: any) => t.status === "in_progress");
+            const doneTasks = projectTasks.filter((t: any) => t.status === "done");
 
             return (
               <div key={project.id} className="w-[340px] shrink-0 flex flex-col bg-[#fafafa] border border-[#e5e7eb] rounded-[20px] p-4 snap-center shadow-sm">
